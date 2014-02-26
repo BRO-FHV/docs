@@ -15,6 +15,3 @@ This is the documentation for our operating system for ressource limited systems
 - [Johannes Schwendinger](https://github.com/jotschgl)
 - [Johannes Wachter](https://github.com/wachterjohannes)
 - [Michael Zangerle](https://github.com/michaelzangerle)
-
-## <a name="Architecture"></a>The Architecture
-![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/architecture.png)
