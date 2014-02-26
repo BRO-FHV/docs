@@ -3,7 +3,7 @@
 #### Overview
 
 - [Description](#Description)
-- [Architecture](#Architecture)
+- [Architecture](https://github.com/BRO-FHV/docs/blob/master/architecture.md)
 - ...
 
 ## <a name="Description"></a>Description
