@@ -10,7 +10,7 @@
   * Event-Manager
   * Scheduler + Process Management
   * ...
-  * Driver:
+  * Driver: each driver as folder
     * GPIO
     * ...
 
