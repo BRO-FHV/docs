@@ -1,0 +1,16 @@
+# Project Structure
+
+* Application: each application = one repository
+  * PHP-Extensions
+  * C-Lib
+  * PHP-Apps
+  * HTTP-Webserver
+* Kernel: each block in architecture = one repository
+  * File-System
+  * Event-Manager
+  * Scheduler + Process Management
+  * ...
+  * Driver:
+    * GPIO
+    * ...
+
