@@ -13,4 +13,4 @@
   * Driver: each driver as folder
     * GPIO
     * ...
-
+* HAL: one reoository -> components as folder
