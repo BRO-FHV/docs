@@ -11,5 +11,13 @@ Below you can find a overview over the basic lifecycle of a process.
 ![Process Lifecycle](https://raw.github.com/BRO-FHV/docs/master/images/ProcessLifecycle.png)
 
 ### <a name="Process-Event-Management"></a>Process-Event-Management
-Below you can find a overview over the basic creating, listening and emiting of events.
+Below you can find a overview over the basic creating, listening (on) and firing (emit) of events.
+The function to __create events__ offers the possibility to limit the number of processes listenting and/or to limit the events to specific process ids.
+
+```C
+bool events_on(char event_name[], processID pid);
+bool events_emit(char event_name[], processID pid);
+bool events_create(char event_name[], int count, processID pid[]);
+```
+
 ![Process-Event-Management](https://raw.github.com/BRO-FHV/docs/master/images/IPC-EventManagement.png)
