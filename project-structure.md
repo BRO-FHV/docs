@@ -13,4 +13,6 @@
   * Driver: each driver as folder
     * GPIO
     * ...
-* HAL: one reoository -> components as folder
+* HAL: one repository -> components as folder
+
+![Projectstructure](https://raw.github.com/BRO-FHV/docs/master/images/projectstructure.png)
