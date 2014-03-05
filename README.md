@@ -5,8 +5,9 @@
 #### Overview
 
 - [Description](#Description)
-- [Architecture](https://github.com/BRO-FHV/docs/blob/master/architecture.md)
 - [Project-Structure](https://github.com/BRO-FHV/docs/blob/master/project-structure.md)
+- [Architecture](https://github.com/BRO-FHV/docs/blob/master/architecture.md)
+- [Process](https://github.com/BRO-FHV/docs/blob/master/process.md)
 - ...
 
 ## <a name="Description"></a>Description
