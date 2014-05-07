@@ -9,7 +9,7 @@
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/kernel.png)
 
 ### <a name="Driver"></a>Driver-Project include options
-![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/kernel.png)
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/driver.png)
 
 ### <a name="LWIP"></a>LWIP-Project include options
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/lwip.png)
