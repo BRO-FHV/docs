@@ -1,4 +1,4 @@
-# BRO - BeagleboaRd OS
+﻿# BRO - BeagleboaRd OS
 
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/logo_transparent.png)
 
@@ -8,6 +8,7 @@
 - [Project-Structure](https://github.com/BRO-FHV/docs/blob/master/project-structure.md)
 - [Architecture](https://github.com/BRO-FHV/docs/blob/master/architecture.md)
 - [Process-Management](https://github.com/BRO-FHV/docs/blob/master/process-management.md)
+- [Configuration](https://github.com/BRO-FHV/docs/blob/master/configuration.md)
 - ...
 
 ## <a name="Description"></a>Description
