@@ -3,6 +3,7 @@
 #### <a name="MMU_Mem"></a> Memory Model
 The here given illustration shows the memory model of our BeagleBone boards.
 You can find the full description in the AM335x Technical Reference Manual.
+
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/memoryMap.png)
 
 The below shown Graphic shows the memory concept of our MMU. It shows how we map the physical memory to your virtual memory.
