@@ -18,3 +18,5 @@ Our page table has a size of 1Gb. This allows us to save 16384 pages in the page
 We are able to manage up to xxx processes with our memory model. We do not think that we need more than xxx processes for our small operating system.  
 As you can see from the above graphic of our store model, we have opted for the 4 to 1 division. Our operating system receives 1Gb memory. Our VM on the other hand gets 4GB of space.
 
+xxx
+
