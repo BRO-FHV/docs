@@ -1,6 +1,6 @@
 [Back to Overview](https://github.com/BRO-FHV/docs/blob/master/README.md)
-## <a name="MMU"></a>The MMU
-#### <a name="MMU_Mem"></a> Memory Model
+# Memory Management Unit
+## Memory Model
 The here given illustration shows the memory model of our BeagleBone boards.
 You can find the full description in the AM335x Technical Reference Manual.
 
