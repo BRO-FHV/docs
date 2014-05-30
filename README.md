@@ -10,6 +10,7 @@
 - [Process-Management](https://github.com/BRO-FHV/docs/blob/master/process-management.md)
 - [Configuration](https://github.com/BRO-FHV/docs/blob/master/configuration.md)
 - [Memory Management Unit](https://github.com/BRO-FHV/docs/blob/master/mmu.md)
+- [Client](https://github.com/BRO-FHV/docs/blob/master/client.md)
 - ...
 
 ## <a name="Description"></a>Description
