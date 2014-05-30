@@ -7,6 +7,11 @@
 - [Process-Event-Management](#Process-Event-Management) 
 - ...
 
+### <a name="Process-Start"></a>Process Start with ELF
+Below you can find a overview over the basic structure of the ELF-file loader/parser
+![Process Lifecycle](https://raw.github.com/BRO-FHV/docs/master/images/ELFParser.png)
+
+
 ### <a name="Process-Lifecycle"></a>Process Lifecycle
 Below you can find a overview over the basic lifecycle of a process.
 ![Process Lifecycle](https://raw.github.com/BRO-FHV/docs/master/images/ProcessLifecycle.png)
