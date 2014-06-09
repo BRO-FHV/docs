@@ -4,6 +4,9 @@
 - [Kernel](#Kernel) 
 - [Driver](#Driver) 
 - [LWIP](#LWIP) 
+- [Scheduler](#Scheduler) 
+- [Util](#Util) 
+- [Hal](#Hal)
 
 ### <a name="Kernel"></a>Kernel-Project include options
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/kernel.png)
@@ -13,3 +16,12 @@
 
 ### <a name="LWIP"></a>LWIP-Project include options
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/lwip.png)
+
+### <a name="Scheduler"></a>Scheduler-Project include options
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/scheduler.png)
+
+### <a name="Util"></a>Util-Project include options
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/util.png)
+
+### <a name="Hal"></a>HAL-Project include options
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/hal.png)
