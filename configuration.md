@@ -7,9 +7,11 @@
 - [Scheduler](#Scheduler) 
 - [Util](#Util) 
 - [Hal](#Hal)
+- [Library](#Library)
 
 ### <a name="Kernel"></a>Kernel-Project include options
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/kernel.png)
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/kernel_2.png)
 
 ### <a name="Driver"></a>Driver-Project include options
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/driver.png)
@@ -25,3 +27,6 @@
 
 ### <a name="Hal"></a>HAL-Project include options
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/hal.png)
+
+### <a name="Library"></a>Library-Project include options
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/library.png)
