@@ -14,7 +14,7 @@
 - ...
 
 ## <a name="Description"></a>Description
-This is the documentation for our operating system for ressource limited systems. The basic goal was to implement an OS on a beagleboard bone bare metal. The basic points are:  
+This is the documentation for our operating system for ressource limited systems. The basic goal was to implement an OS on a beaglebone bare metal. The basic points are:  
 
 - a monolitic kernel
 - applications in php and c
