@@ -11,7 +11,8 @@
 - [Configuration](https://github.com/BRO-FHV/docs/blob/master/configuration.md)
 - [Memory Management Unit](https://github.com/BRO-FHV/docs/blob/master/mmu.md)
 - [Client](https://github.com/BRO-FHV/docs/blob/master/client.md)
-- ...
+- [Timer](https://github.com/BRO-FHV/docs/blob/master/timer.md)
+- [Elf](https://github.com/BRO-FHV/docs/blob/master/elf.md)
 
 ## <a name="Description"></a>Description
 This is the documentation for our operating system for ressource limited systems. The basic goal was to implement an OS on a beaglebone bare metal. The basic points are:  
