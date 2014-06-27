@@ -1,5 +1,5 @@
 [Back to Overview](https://github.com/BRO-FHV/docs/blob/master/README.md)
-## <a name="Configuration"></a>The Configuration
+## <a name="Configuration"></a>Solution configurations
 #### Overview
 - [Kernel](#Kernel) 
 - [Driver](#Driver) 
@@ -29,4 +29,4 @@
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/hal.png)
 
 ### <a name="Library"></a>Library-Project include options
-![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/library.png)
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/library2.png)
