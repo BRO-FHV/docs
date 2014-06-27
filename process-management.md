@@ -4,7 +4,7 @@
 #### Overview
 - [Process-Lifecycle](#Process-Lifecycle) 
 - [Process-Event-Management](#Process-Event-Management) 
-- ...
+- [Scheduler](#Scheduler) 
 
 ### <a name="Process-Lifecycle"></a>Process Lifecycle
 Below you can find a overview over the basic lifecycle of a process.
@@ -38,4 +38,36 @@ bool events_deregister_emitter(char event_name[], processID pid);
 The function to __create events__ offers the possibility to limit the number of processes listenting and/or to limit the events to specific process ids. 
 ...
 
+## Scheduler
+Below you can find a overview over the basic functions concerning the scheduler:
+- Process management (start, stop, wait, kill)
+- Processswitching
+
+
+```C
+/*
+ * Process structure
+ */
+typedef struct {
+	processID id;
+	processState state;
+	processFunc func;
+	programCounter pc;
+	registerCache reg[REG_COUNT];
+
+	/* Control Process Status Register */
+	cpsrValue cpsr;
+
+	uint32_t* masterTable;
+
+} Process;
+
+void SchedulerRunNextProcess(Context* context);
+void SchedulerStartProcess(processFunc func);
+Process* SchedulerCurrentProcess(void);
+void KillProcess(processID);
+void loadProcessFromElf(uint32_t length, uint8_t* data);
+```
+
+###Problems
 
