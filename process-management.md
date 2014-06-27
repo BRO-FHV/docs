@@ -38,11 +38,20 @@ bool events_deregister_emitter(char event_name[], processID pid);
 The function to __create events__ offers the possibility to limit the number of processes listenting and/or to limit the events to specific process ids. 
 ...
 
-## Scheduler
+## <a name="Scheduler"></a> Scheduler
 Below you can find a overview over the basic functions concerning the scheduler:
 - Process management (start, stop, wait, kill)
 - Processswitching
 
+```C
+void SchedulerRunNextProcess(Context* context);
+void SchedulerStartProcess(processFunc func);
+Process* SchedulerCurrentProcess(void);
+void KillProcess(processID);
+void loadProcessFromElf(uint32_t length, uint8_t* data);
+```
+
+The following code segment represents a process.
 
 ```C
 /*
@@ -61,13 +70,9 @@ typedef struct {
 	uint32_t* masterTable;
 
 } Process;
-
-void SchedulerRunNextProcess(Context* context);
-void SchedulerStartProcess(processFunc func);
-Process* SchedulerCurrentProcess(void);
-void KillProcess(processID);
-void loadProcessFromElf(uint32_t length, uint8_t* data);
 ```
+
+
 
 ###Problems
 
