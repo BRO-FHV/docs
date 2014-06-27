@@ -73,6 +73,9 @@ typedef struct {
 ```
 
 
-
 ###Problems
+Because we assigned a wrong parameter to the following function (wrong REG_COUNT) we had some major problems when we switched processes. Because of this bug we lost the process context which resulted in some problems whens loading an elf file.
 
+```C
+memcpy(context->reg, gThreads[gRunningThread].reg, REG_COUNT);
+```
