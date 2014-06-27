@@ -45,3 +45,22 @@ typedef struct SyscallArg
 #pragma SWI_ALIAS(Syscall, 1)
 extern void Syscall(SyscallArgData* data);
 ```
+
+The software handler of the operating system processes the incomming syscalls caused by the software interrupts and forwards them to the target components of the os.
+
+```C
+void SwiForward(SyscallArgData* data) {
+
+	uint32_t result = -1;
+	void* resultPointer=NULL;
+
+	switch (data->swiNumber) {
+
+	case SYSCALL_PRINTF:
+		SwiStdioPrintf((const char*) data->arg1);
+		break;
+	case SYSCALL_LED_ON_0:
+		SwiLed0On();
+		break;
+		...
+```
