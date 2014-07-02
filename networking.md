@@ -9,7 +9,7 @@ This project uses LWIP for basic networking tasks. The porting is inspired by St
 The biggest problem in this component were some unaligned accesses. These were caused by unpacked structs in the porting part of LWIP.
 
 ### Solution
-The solution for this problem was to implement the UDP and IP part of our own which was accomplished by defining structs for each protokoll header and cast the data package. This prevented the unaliged accesses.
+The solution for this problem was to implement the UDP and IP part of our own which was accomplished by defining structs for each protocol header and cast the data package. This prevented the unaliged accesses.
 
 Example: UDP header contains the IP and ethernet header: 
 
