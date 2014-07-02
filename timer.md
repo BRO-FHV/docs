@@ -22,11 +22,11 @@ typedef enum {
 ```
 
 The first method that needs to be called when you want to use a timer is TimerConfiguration. As parameter you need to pass:
-*the Timer (use the enum) you want to configure
-*the milliseconds
-**which specify the amount of time after which the first interrupt should be raised
-**and how much time should pass between each interrupt
-*the InterruptRoutine, which is called when the interrupt occurs.
+- the Timer (use the enum) you want to configure
+- the milliseconds
+-- which specify the amount of time after which the first interrupt should be raised
+-- and how much time should pass between each interrupt
+- the InterruptRoutine, which is called when the interrupt occurs.
 
 In the InterruptRoutine you can do the stuff you want. The interrupt flags and so on is resetted automatically.
 
@@ -62,6 +62,6 @@ void TimerDelayDelay(uint32_t milliSec);
 Nothing - we are too good!
 
 ### Which timers are used
-*Timer2 is used for the scheduler
-*DelayTimer is used for the network configuration
-*DelayTimer is used for the sd card initialization
+- Timer2 is used for the scheduler
+- DelayTimer is used for the network configuration
+- DelayTimer is used for the sd card initialization
