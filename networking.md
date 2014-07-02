@@ -1,17 +1,17 @@
 [Back to Overview](https://github.com/BRO-FHV/docs/blob/master/README.md)
 ## <a name="Networking"></a>Networking
 
-This Project uses LWIP for basic networking tasks. The porting is inspired by Starterware.
+This project uses LWIP for basic networking tasks. The porting is inspired by Startaware.
 
 ![LWIP Port](http://processors.wiki.ti.com/images/e/ec/StarterWare_Ethernet.jpg "Source: http://processors.wiki.ti.com/index.php/StarterWare_CPSW_Port_lwIP")
 
 ### Problems
-In the basic lib we have some unaligned accesses. This was caused by unpacked structs in the porting part.
+The biggest problem in this component were some unaligned accesses. These were caused by unpacked structs in the porting part of LWIP.
 
 ### Solution
-The solution was to implement the IP/UDP part for our own. This was accomplished by define structs for each protokoll header and cast the data package.
+The solution for this problem was to implement the UDP and IP part of our own which was accomplished by defining structs for each protokoll header and cast the data package. This prevented the unaliged accesses.
 
-Example: UDP header contains the IP and Ethernet header. This prevented the unaliged accesses.
+Example: UDP header contains the IP and ethernet header: 
 
 ```c
 typedef struct {
@@ -56,9 +56,9 @@ typedef struct {
 In the current state it is possible to receive and send packages with UPD. An application can start listing for a specific port and can poll for incoming data.
 
 ### Outlook
-For a real usage of LWIP it would be important to fix the Port and use the whole lib. That would raise the security and the reliability.
+For a real usage of LWIP it would be important to fix the porting of LWIP and use the whole library. That would raise the security and the reliability.
 
-After that the IPC should be implemented to async inform the Application for incoming packages.
+After that the IPC should be implemented to asynchronously inform the application for incoming packages.
 
 ### Code Example
 
