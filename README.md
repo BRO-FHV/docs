@@ -48,7 +48,8 @@ The current state of the project contains:
 - implementation of the DMX driver
 - refactoring of the HAL :D
 
-### <a name="Team"></a>Team
+## <a name="Team"></a>Team
+
 - [Thomas Gaida](https://github.com/thomasgaida)
 - [Stefan Lässer](https://github.com/sla89)
 - [Johannes Schwendinger](https://github.com/jotschgl)
