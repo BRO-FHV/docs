@@ -29,7 +29,7 @@ This is the documentation for our operating system for ressource limited systems
 
 Ultimately we should have a light controll and manage the lights in the browser.
 
-## <a name="CurrentState></a>Current State
+## <a name="CurrentState"></a>Current State
 The current state of the project contains:
 
 - a hardware abstraction layer 
@@ -48,7 +48,7 @@ The current state of the project contains:
 - implementation of the DMX driver
 - refactoring of the HAL :D
 
-### <a name="Team></a>Team
+### <a name="Team"></a>Team
 - [Thomas Gaida](https://github.com/thomasgaida)
 - [Stefan Lässer](https://github.com/sla89)
 - [Johannes Schwendinger](https://github.com/jotschgl)
