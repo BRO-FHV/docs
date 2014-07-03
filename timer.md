@@ -58,9 +58,14 @@ To use the delay timer you can whether use TimerDelayDelay or TimerDelayStart. T
 void TimerDelayDelay(uint32_t milliSec);
 ```
 
-### Problems
-Nothing - we are too good!
+###Used clock
+For each timer we use the high frequency system input clock with 32Khz as clock source.
 
+### Problems
+The only problem we were faced to was to realize the trigger of the interrupt everytime the set amount of time has passed. 
+To realize it we set th
+
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/timer.png)
 ### Which timers are used
 - Timer2 is used for the scheduler
 - DelayTimer is used for the network configuration
