@@ -58,9 +58,13 @@ To use the delay timer you can whether use TimerDelayDelay or TimerDelayStart. T
 void TimerDelayDelay(uint32_t milliSec);
 ```
 
-### Problems
-Nothing - we are too good!
+###Used clock
+For each timer we use the high frequency system input clock with 32Khz as clock source.
 
+### Problems
+The only problem we were faced to was to realize the trigger of the interrupt everytime the set amount of time has passed. The following image gives a clue how we have realized this. The "timer counter register" (=TCRR) is increased automatically and the starting value is equal to the value of the "timer load register" (=TLDR). The value of TLDR is used as reset value of the TCRR after an overflow (means TCRR reached value 0xFFFF FFFF) occurrd. In this case the TCRR value is set to the value of TLDR and the interrupt is triggered (=overflow-interrupt). 
+
+![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/timer.png)
 ### Which timers are used
 - Timer2 is used for the scheduler
 - DelayTimer is used for the network configuration
