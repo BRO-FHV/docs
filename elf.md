@@ -20,7 +20,7 @@ startFileSystem();
 FILINFO fi;
 
 if (f_stat("BRO_UDP.out", &fi) == FR_OK) {
-  uint8_t* dataBuff = malloc(fi.fsize);
+        uint8_t* dataBuff = malloc(fi.fsize);
 	getElfFile(dataBuff, fi.fsize, "BRO_UDP.out");
 
 	// start a process
