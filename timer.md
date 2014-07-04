@@ -68,5 +68,6 @@ The only problem we were faced to was to realize the trigger of the interrupt ev
 
 ### Which timers are used
 - Timer2 is used for the scheduler
-- DelayTimer is used for the network configuration
-- DelayTimer is used for the sd card initialization
+- Timer7 is used for DelayTimer 
+	- DelayTimer is used for the network configuration
+	- DelayTimer is used for the sd card initialization
