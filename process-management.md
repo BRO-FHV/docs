@@ -35,8 +35,8 @@ bool events_register_emitter(char event_name[], processID pid);
 bool events_deregister_emitter(char event_name[], processID pid);
 ```
 
-The function to __create events__ offers the possibility to limit the number of processes listenting and/or to limit the events to specific process ids. 
-...
+The function to __create events__ offers the possibility to limit the number of processes listening  and/or to limit the events to specific process ids.
+
 
 ## <a name="Scheduler"></a> Scheduler
 Below you can find a overview over the basic functions concerning the scheduler:

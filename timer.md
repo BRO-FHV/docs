@@ -1,12 +1,9 @@
 [Back to Overview](https://github.com/BRO-FHV/docs/blob/master/README.md)
 ## <a name="Timer"></a>Timer
-The following sections is explaining the API and the problems we were faced during implementation. 
-In the API section we also go into detail and explain some important stuff, that needs to be known when using the timer of our operating system.
-Last you can find information about which timer were already used.
+The following section is explaining the API and the problems we were faced during implementation of the timer functionality. In the API section we also go into detail and explain some important stuff that needs to be known when using the timer of our operating system. Last you can find information about which timer were already used.
 
 ### API
-The API offers the opportunity to easily configure and enable a specific timer by just using the following enum.
-So the user of the timer driver does not need to have knowledge about the hardware address of the timer he/she wants to use.
+The following section is explaining the API and the problems we were faced during implementation of the timer functionality. In the API section we also go into detail and explain some important stuff that needs to be known when using the timer of our operating system. Last you can find information about which timer were already used.
 
 Here you can see the enum: 
 ```c
@@ -21,14 +18,15 @@ typedef enum {
 } Timer;
 ```
 
-The first method that needs to be called when you want to use a timer is TimerConfiguration. As parameter you need to pass:
+The first method that needs to be called is TimerConfiguration. As parameter you need to pass:
+
 - the Timer (use the enum) you want to configure
 - the milliseconds
 	- which specify the amount of time after which the first interrupt should be raised
 	- and how much time should pass between each interrupt
-- the InterruptRoutine, which is called when the interrupt occurs.
+- the InterruptRoutine, which is called when the interrupt occurs
 
-In the InterruptRoutine you can do the stuff you want. The interrupt flags and so on is resetted automatically.
+In the InterruptRoutine you can do the stuff you want. The interrupt flags and so on were reset automatically.
 
 Here you can see the API for the configuration:
 ```c
@@ -53,20 +51,20 @@ Our system also provides the opportunity to use a lightweight delay timer. The T
 void TimerDelaySetup();
 ```
 
-To use the delay timer you can whether use TimerDelayDelay or TimerDelayStart. TimerDelayDelay is a one-shot delay. When the passed milliseconds are over, the timer stops after the interrupt occurred.  This timer is processed as blocking operation - so when the delay timer is started no other code will be executed.
+To use the delay timer you use TimerDelayDelay. This method offers you a one-shot delay. When the passed milliseconds are over, an interrupt occurs and the timer stops automatically. This timer is processed as blocking operation - so when the delay timer is started no other code will be executed.
 ```c
 void TimerDelayDelay(uint32_t milliSec);
 ```
 
 ###Used clock
-For each timer we use the high frequency system input clock with 32Khz as clock source.
+For every timer we use the high frequency system input clock with 32 KHz as clock source.
 
 ### Problems
-The only problem we were faced to was to realize the trigger of the interrupt everytime the set amount of time has passed. The following image gives a clue how we have realized this. The "timer counter register" (=TCRR) is increased automatically and the starting value is equal to the value of the "timer load register" (=TLDR). The value of the TLDR is used as reset value of the TCRR after an overflow (means TCRR value > 0xFFFF FFFF) occurrd. In this case the TCRR value is set to the value of TLDR and the interrupt is triggered (=overflow-interrupt). 
+The only problem we were faced to was to realize the trigger of the interrupt everytime the set amount of time has passed. The following image gives a clue how we have realized this. The "timer counter register" (=TCRR) is increased automatically and the starting value is equal to the value of the "timer load register" (=TLDR). The value of the TLDR is used as reset value of the TCRR after an overflow has occurred (means TCRR value > 0xFFFF FFFF). In this case the TCRR value is set to the value of TLDR and the interrupt is triggered (=overflow-interrupt). 
 
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/timer.png)
 
-### Which timers are used
+### Which timers were used
 - Timer2 is used for the scheduler
 - Timer7 is used for DelayTimer 
 	- DelayTimer is used for the network configuration

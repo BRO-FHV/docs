@@ -1,11 +1,11 @@
 [Back to Overview](https://github.com/BRO-FHV/docs/blob/master/README.md)
 ## <a name="Architecture"></a>The Client
-Below you can find a overview over the basic workflow of a client programm. The client programm uses the api_* methods of the library which it self calls the syscall method and results in an software interrupt in the os.
+Below you can find an overview over the basic workflow of a client/application program. The client program uses the api_* methods of the library which itself calls the syscall method and results in a software interrupt in our OS.
 
 ![alt tag](https://raw.github.com/BRO-FHV/docs/master/images/Cilent_Library_Kernel_Interaction.png)
 
 ### Software Interrupt
-The processes loaded by elf use software interrupts to communicate with the operating system. Therefore we implemented a small library for the client. This library provides a console, led handling, gpio access and udp functions. Below you can find an example for printing text onto the console.
+The processes loaded by elf use software interrupts to communicate with the operating system. Therefore we implemented a small library for our so called client. This library provides a console output and access/control to the onboard LEDs, GPIO and Ethernet (limited to UDP). Below you can find an example for printing text onto the console.
 
 
 ```C
@@ -27,7 +27,7 @@ void lib_print(const char* format, ...) {
 }
 ```
 
-The abstraction layer provided by the library uses following struct to communicate with the os and supports five arguments and two return values.
+The abstraction layer provided by the library uses the following struct to communicate with the OS and supports five arguments and two return values.
 
 ```C
 typedef struct SyscallArg
