@@ -4,13 +4,15 @@
 This project uses FatFs as file system. It is a generic FAT file system module for small embedded systems.
 [FatFs Homepage](http://elm-chan.org/fsw/ff/00index_e.html)
 
+
+###Features supported
 The whole SD part is directly built up on the StarterWare MMCSD Driver
 Because of this, the following features are available:
-###Features supported
--Support for SD v2.0 standard
--Support for Standard Capacity and High capacity cards
--Support for Standard Speed and High Speed cards
--DMA mode of operation
+
+- Support for SD v2.0 standard
+- Support for Standard Capacity and High capacity cards
+- Support for Standard Speed and High Speed cards
+- DMA mode of operation
 
 ![StarterWare MMCSD Driver](http://processors.wiki.ti.com/images/2/2c/MMCSDFrameWork.JPG"Source: http://processors.wiki.ti.com/index.php/StarterWare_MMCSD_Driver")
 
