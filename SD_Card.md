@@ -14,7 +14,7 @@ Because of this, the following features are available:
 - Support for Standard Speed and High Speed cards
 - DMA mode of operation
 
-![StarterWare MMCSD Driver](http://processors.wiki.ti.com/images/2/2c/MMCSDFrameWork.JPG"Source: http://processors.wiki.ti.com/index.php/StarterWare_MMCSD_Driver")
+![StarterWare MMCSD Driver](http://processors.wiki.ti.com/images/2/2c/MMCSDFrameWork.JPG "Source: http://processors.wiki.ti.com/index.php/StarterWare_MMCSD_Driver")
 
 ### Changes 
 In order to work with the BRO OS some minor changes were necessary.
